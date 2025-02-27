@@ -1,9 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./reset.css";
+import "./normalize.css";
+import "./index.css";
+import AppRoutes from "./routes";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <h1>Olá, mundo!</h1>
+    <AppRoutes />
   </StrictMode>
 );
