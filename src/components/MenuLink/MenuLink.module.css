@@ -1,0 +1,6 @@
+.link {
+  color: var(--branco);
+  font: 400 18px var(--fonte);
+  padding: 1em;
+  text-decoration: none;
+}
