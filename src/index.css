@@ -7,6 +7,6 @@
 
 body {
   background-color: var(--branco);
-  font-family: var(--fonte);
+  font: normal normal 1rem/1rem var(--fonte);
   margin: 0;
 }
