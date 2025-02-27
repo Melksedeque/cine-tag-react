@@ -9,6 +9,6 @@ footer.rodape {
 
 footer.rodape p {
   color: var(--branco);
-  font: 400 18px var(--fonte);
+  font: 400 1rem var(--fonte);
   margin: 0;
 }
