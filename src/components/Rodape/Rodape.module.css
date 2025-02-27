@@ -1,10 +1,14 @@
 footer.rodape {
+  align-items: center;
   background-color: var(--preto);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 1.5em;
 }
 
 footer.rodape p {
   color: var(--branco);
   font: 400 18px var(--fonte);
+  margin: 0;
 }
