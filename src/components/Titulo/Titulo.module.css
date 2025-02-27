@@ -1,0 +1,25 @@
+.titulo {
+    font: 500 2rem var(--fonte);
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+}
+
+.titulo h2 {
+    font-size: 1.75rem;
+}
+
+.titulo h3 {
+    font-size: 1.5rem;
+}
+
+.titulo h4 {
+    font-size: 1.25rem;
+}
+
+.titulo h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
