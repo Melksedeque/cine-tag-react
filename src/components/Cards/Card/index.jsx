@@ -1,14 +1,12 @@
 import styles from "./Card.module.css";
 import iconeFavoritar from "./favoritar.png";
-import iconeDesfavoritar from "./desfavoritar.png";
+// import iconeDesfavoritar from "./desfavoritar.png";
 
 export default function Card({ id, titulo, capa }) {
   return (
-    <figure key={id}>
+    <figure key={id} className={styles.card}>
       <img src={capa} alt={titulo} className={styles.capa} />
-      <figcaption>
-        <h3>{titulo}</h3>
-      </figcaption>
+      <figcaption className={styles.titulo}>{titulo}</figcaption>
       <img
         src={iconeFavoritar}
         alt="Favoritar filme"
