@@ -3,6 +3,5 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 auto 2rem;
 }
