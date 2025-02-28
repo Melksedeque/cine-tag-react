@@ -1,0 +1,21 @@
+.card {
+  background-color: var(--cinza);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  padding: 0 0 1em 0;
+  width: 202px;
+}
+
+.card .capa {
+  width: 100%;
+}
+
+.card .titulo {
+  padding: 0 1em;
+}
+
+.card .favoritar {
+  width: 25px;
+}
