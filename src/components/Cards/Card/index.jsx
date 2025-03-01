@@ -1,8 +1,11 @@
+import { useFavoritosContext } from "@/contexts/Favoritos";
 import styles from "./Card.module.css";
 import iconeFavoritar from "./favoritar.png";
 // import iconeDesfavoritar from "./desfavoritar.png";
 
 export default function Card({ id, titulo, capa }) {
+  const { favorito, manipularFavorito } = useFavoritosContext();
+  
   return (
     <figure key={id} className={styles.card}>
       <img src={capa} alt={titulo} className={styles.capa} />
@@ -11,6 +14,9 @@ export default function Card({ id, titulo, capa }) {
         src={iconeFavoritar}
         alt="Favoritar filme"
         className={styles.favoritar}
+        onClick={() => {
+          manipularFavorito({ id, titulo, capa });
+        }}
       />
     </figure>
   );
