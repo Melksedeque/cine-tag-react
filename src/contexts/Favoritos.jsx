@@ -29,7 +29,7 @@ export function useFavoritosContext() {
       novaLista.push(novoFavorito);
       return setFavorito(novaLista);
     } else {
-      setFavorito(favorito.filter((item) => item.id !== id));
+      novaLista = favorito.filter((item) => item.id !== novoFavorito.id);
     }
 
     return setFavorito(novaLista);
