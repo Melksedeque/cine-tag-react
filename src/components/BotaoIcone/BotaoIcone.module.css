@@ -2,4 +2,6 @@
     background-color: transparent;
     border: 0 none;
     color: inherit;
+    padding: .5rem 1rem;
+    text-align: left;
 }
