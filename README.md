@@ -27,16 +27,45 @@
 ## Descrição
 
 ### Principais recursos incluem:
+- Página inicial com cards de vídeos
+- Sistema de favoritos para salvar vídeos
+- Navegação entre páginas Home e Favoritos
+- Interface responsiva com cabeçalho e rodapé consistentes
 
 ### Proximos passos de desenvolvimento
 
 ## Tecnologias Utilizadas
+- React.js
+- React Router DOM
+- Vite
+- CSS Modules
+- ESLint
 
 ## Estrutura de Pastas
+```
+src/
+  ├── components/     # Componentes reutilizáveis
+  ├── contexts/      # Contextos React (ex: Favoritos)
+  ├── json/          # Dados estáticos
+  ├── pages/         # Páginas da aplicação
+  └── main.jsx       # Ponto de entrada da aplicação
+```
 
 ### Arquivos Principais:
+- `src/routes.jsx` - Configuração de rotas
+- `src/contexts/Favoritos.jsx` - Gerenciamento de favoritos
+- `src/json/db.json` - Banco de dados local de vídeos
 
 ## Como Instalar e Rodar o Projeto
+1. Clone o repositório
+2. Instale as dependências:
+```bash
+npm install
+```
+3. Execute o projeto em modo desenvolvimento:
+```bash
+npm run dev
+```
 
 ### Configuração
 
