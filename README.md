@@ -26,56 +26,96 @@
 
 ## Descrição
 
+O **Cine Tag** é uma aplicação web que consome uma API de vídeos, permitindo aos usuários explorar, favoritar e assistir a vídeos. A aplicação foi desenvolvida em React.JS e utiliza tecnologias modernas para garantir uma experiência fluida e responsiva.
+
 ### Principais recursos incluem:
-- Página inicial com cards de vídeos
-- Sistema de favoritos para salvar vídeos
-- Navegação entre páginas Home e Favoritos
-- Interface responsiva com cabeçalho e rodapé consistentes
+
+- **Página inicial** com cards de vídeos, exibindo informações como título, capa e descrição.
+- **Sistema de favoritos:** os usuários podem favoritar ou desfavoritar vídeos clicando em um ícone de coração.
+- **Navegação intuitiva:** roteamento entre as páginas Home e Favoritos.
+- **Página de player:** ao clicar em um card, o vídeo é reproduzido em uma página dedicada.
 
 ### Proximos passos de desenvolvimento
 
+- Melhorar o layout seguindo o criado no Figma;
+- Criar a responsividade da aplicação;
+- Adicionar autenticação de usuários para personalizar a experiência;
+- Implementar busca e filtragem de vídeos por categoria ou título;
+- Integrar uma API de vídeos real (ex: YouTube, Vimeo);
+- Adicionar testes unitários e de integração;
+- Melhorar a acessibilidade da aplicação;
+
 ## Tecnologias Utilizadas
-- React.js
-- React Router DOM
-- Vite
-- CSS Modules
-- ESLint
+
+- **React.js:** Biblioteca principal para construção da interface.
+- **React Router DOM:** Gerenciamento de rotas e navegação.
+- **Vite:** Ferramenta de build rápida e moderna.
+- **CSS Modules:** Estilização modularizada para evitar conflitos.
+- **ESLint:** Padronização e qualidade do código.
+- **My JSON Server:** Simulação de API para dados de vídeos.
 
 ## Estrutura de Pastas
+
 ```
 src/
   ├── components/     # Componentes reutilizáveis
   ├── contexts/      # Contextos React (ex: Favoritos)
-  ├── json/          # Dados estáticos
   ├── pages/         # Páginas da aplicação
   └── main.jsx       # Ponto de entrada da aplicação
 ```
 
 ### Arquivos Principais:
-- `src/routes.jsx` - Configuração de rotas
-- `src/contexts/Favoritos.jsx` - Gerenciamento de favoritos
-- `src/json/db.json` - Banco de dados local de vídeos
+
+- `src/routes.jsx` - Configuração das rotas da aplicação
+- `src/contexts/Favoritos.jsx` - Contexto para gerenciar o estado dos vídeos favoritos
 
 ## Como Instalar e Rodar o Projeto
+
 1. Clone o repositório
+
+```bash
+git clone https://github.com/Melksedeque/cine-tag-react.git
+```
+
 2. Instale as dependências:
+
 ```bash
 npm install
 ```
+
 3. Execute o projeto em modo desenvolvimento:
+
 ```bash
 npm run dev
 ```
 
 ### Configuração
 
+- Para alterar a fonte de dados, substitua a URL da API no arquivo de configuração.
+- Caso queira simular uma API local, utilize o db.json com o My JSON Server.
+
 ### Casos de Uso Comuns
+
+- **Favoritar vídeos:** Clique no ícone de coração nos cards da página inicial.
+- **Assistir vídeos:** Clique em um card para abrir o player.
+- **Navegar entre páginas:** Use o menu de navegação no cabeçalho.
 
 ### Solução de Problemas
 
+- **Erro ao carregar vídeos:** Verifique a conexão com a API ou o arquivo db.json.
+- **Problemas de estilo:** Certifique-se de que os módulos CSS estão corretamente importados.
+
 ## Projeto ao Vivo
 
+Acesse a versão online do projeto [aqui](https://cine-tag-react-two.vercel.app).
+
 ## Fluxo de Dados
+
+1. A aplicação consome a API de vídeos (https://my-json-server.typicode.com/Melksedeque/cine-tag-react/videos).
+2. Os vídeos são exibidos na página inicial.
+3. Ao favoritar um vídeo, ele é adicionado ao contexto de favoritos.
+4. Os vídeos favoritos são exibidos na página "Favoritos".
+5. Ao clicar em um vídeo, o usuário é redirecionado para a página de player, onde o vídeo é reproduzido.
 
 ## Licença
 
