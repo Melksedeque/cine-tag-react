@@ -13,9 +13,10 @@ export default function Favoritos() {
         <h1>Meus Favoritos</h1>
       </Titulo>
       <Cards>
-        {favoritos.map((fav) => {
-          return <Card {...fav} key={fav.id} />;
-        })}
+        {favoritos &&
+          favoritos.map((fav) => {
+            return <Card {...fav} key={fav.id} />;
+          })}
       </Cards>
     </>
   );
