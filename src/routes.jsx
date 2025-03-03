@@ -5,6 +5,7 @@ import FavoritosProvider from "@/contexts/Favoritos";
 import Favoritos from "pages/Favoritos";
 import Inicio from "pages/Inicio";
 import Player from "pages/Player";
+import NaoEncontrada from "pages/NaoEncontrada";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function AppRoutes() {
@@ -17,6 +18,7 @@ export default function AppRoutes() {
             <Route path="/" element={<Inicio />} />
             <Route path="/favoritos" element={<Favoritos />} />
             <Route path="/player/:id" element={<Player />} />
+            <Route path="*" element={<NaoEncontrada />} />
           </Routes>
         </FavoritosProvider>
       </Container>
