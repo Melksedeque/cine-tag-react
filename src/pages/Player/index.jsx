@@ -13,10 +13,11 @@ export default function Player() {
     <>
       <Banner imagem="Player" />
       <Titulo>
-        <h1>Player</h1>
+        <h1>{video.titulo}</h1>
       </Titulo>
       <Container>
         <iframe
+          width="100%"
           src={video.link}
           title={video.titulo}
           frameborder="0"
