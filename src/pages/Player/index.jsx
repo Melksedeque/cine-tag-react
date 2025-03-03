@@ -30,6 +30,7 @@ export default function Player() {
       </Titulo>
       <Container>
         <iframe
+          className={styles.player}
           width="100%"
           src={video.link}
           title={video.titulo}
