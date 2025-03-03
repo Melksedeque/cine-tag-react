@@ -1,7 +1,15 @@
 .botaoIcone {
-    background-color: transparent;
-    border: 0 none;
-    color: inherit;
-    padding: .5rem 1rem;
-    text-align: left;
+  background-color: transparent;
+  border: 0 none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+
+.botaoIcone img {
+  width: 100%;
 }
