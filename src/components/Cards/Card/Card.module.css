@@ -1,11 +1,19 @@
 .card {
   background-color: var(--cinza);
+  box-shadow: ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0.5em 0;
   padding: 0 0 1em 0;
+  transition: all 0.25s ease-in-out;
   width: 282px;
+}
+
+.card .link {
+  color: var(--preto);
+  text-align: left;
+  text-decoration: none;
 }
 
 .card .capa {
@@ -13,9 +21,11 @@
 }
 
 .card .titulo {
+  font-size: 18px;
+  font-weight: bold;
   padding: 0 1em;
 }
 
-.card .favoritar {
-  width: 25px;
+.card:hover {
+  transform: scale(1.05);
 }
