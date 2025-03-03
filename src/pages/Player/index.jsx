@@ -1,14 +1,22 @@
 import styles from "./Player.module.css";
 import Banner from "@/components/Banner";
 import Titulo from "@/components/Titulo";
-import videos from "@/json/db.json";
 import Container from "@/components/Container";
 import NaoEncontrada from "pages/NaoEncontrada";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Player() {
+  const [video, setVideo] = useState();
   const parametros = useParams();
-  const video = videos.find((video) => video.id === Number(parametros.id));
+
+  useEffect(() => {
+    fetch(
+      `https://my-json-server.typicode.com/Melksedeque/cine-tag-react/videos?id=${parametros.id}`
+    )
+      .then((res) => res.json())
+      .then((dados) => setVideo(...dados));
+  }, []);
 
   if (!video) {
     return <NaoEncontrada />;
