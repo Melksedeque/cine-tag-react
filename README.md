@@ -1,4 +1,4 @@
-# Projeto Cine Tag - React.JS
+# Projeto Cine Tag - React
 
 ![Tela Principal](./screenshot/tela-principal.png)
 
