@@ -1,5 +1,7 @@
 # Projeto Cine Tag - React
 
+Cine Tag é uma aplicação React.JS que permite explorar, favoritar e assistir a vídeos. Com uma interface intuitiva, os usuários podem navegar entre a página inicial e a lista de favoritos, além de reproduzir vídeos diretamente na aplicação. Ideal para praticar React, gerenciamento de estado e consumo de APIs.
+
 ![Tela Principal](./screenshot/tela-principal.png)
 
 ## Menu
