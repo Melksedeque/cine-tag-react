@@ -28,7 +28,7 @@ Cine Tag é uma aplicação web React que oferece uma experiência completa para
 
 ## Descrição
 
-O **Cine Tag** é uma aplicação web inovadora desenvolvida em React.JS, que integra uma API de vídeos para proporcionar uma experiência completa aos usuários. Explore facilmente um extenso acervo, personalize sua lista de favoritos e assista seus vídeos prediletos com uma interface fluida e adaptável a diversos dispositivos.
+O **Cine Tag** é uma aplicação web inovadora desenvolvida em React, que integra uma API de vídeos para proporcionar uma experiência completa aos usuários. Explore facilmente um extenso acervo, personalize sua lista de favoritos e assista seus vídeos prediletos com uma interface fluida e adaptável a diversos dispositivos.
 
 ### Principais recursos incluem:
 
